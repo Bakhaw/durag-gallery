@@ -9,6 +9,8 @@ function Home() {
     require.context('../../images', false, /\.(png|jpe?g|svg)$/)
   );
 
+  console.log('images', images);
+
   return (
     <div className='Home'>
       <h1>DURAG GALLERY</h1>
