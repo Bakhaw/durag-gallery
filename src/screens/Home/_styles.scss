@@ -4,22 +4,4 @@
   justify-content: center;
   align-items: center;
   background: #131c36;
-  min-height: 100vh;
-
-  p {
-    color: #fff;
-    font-size: 14px;
-  }
-
-  .Categories {
-    &__Category {
-      &__Title {
-        color: #fa8072;
-        font-size: 52px;
-        margin: 0;
-        text-transform: uppercase;
-        border-bottom: 3px solid #fa8072;
-      }
-    }
-  }
 }

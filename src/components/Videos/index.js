@@ -17,13 +17,10 @@ function Videos() {
       {videos.map((video, i) => (
         <li key={i}>
           <iframe
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
             frameBorder='0'
             src={`https://www.youtube.com/embed/${video.id}`}
             title={video.title}
-            width='560'
-            height='315'
           />
         </li>
       ))}
