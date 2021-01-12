@@ -1,33 +1,36 @@
 import React from 'react';
 
+import Footer from '../../components/Footer';
+import Gallery from '../../components/Gallery';
+import Header from '../../components/Header';
+import Videos from '../../components/Videos';
+
+const categories = [
+  {
+    title: 'Videos',
+    component: <Videos />,
+  },
+  {
+    title: 'Gallery',
+    component: <Gallery />,
+  },
+];
+
 function Home() {
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const images = importAll(
-    require.context('../../images', false, /\.(png|jpe?g|svg)$/)
-  );
-
-  console.log('images', images);
-
   return (
     <div className='Home'>
-      <h1>DURAG GALLERY</h1>
-      <ul>
-        {images.map((img, i) => (
-          <li key={i}>
-            <img alt='Masterpiece.' src={img} />
+      <Header />
+
+      <ul className='Categories'>
+        {categories.map((category, i) => (
+          <li key={i} className='Categories__Category'>
+            <h1 className='Categories__Category__Title'>{category.title}</h1>
+            {category.component}
           </li>
         ))}
       </ul>
 
-      <p>
-        Made with{' '}
-        <span aria-label='Heart' role='img'>
-          ❤️
-        </span>
-      </p>
+      <Footer />
     </div>
   );
 }

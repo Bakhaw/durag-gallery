@@ -1,0 +1,14 @@
+.Videos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    border-radius: 5px;
+    margin: 30px 30px 30px 0;
+
+    iframe {
+      border-radius: 5px;
+    }
+  }
+}
