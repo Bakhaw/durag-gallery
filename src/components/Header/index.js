@@ -13,7 +13,8 @@ function Header() {
     },
     {
       alt: 'Twitch Icon',
-      href: 'https://multitwitch.live/pablytos/teczerr/zelnite93/saoobii',
+      href:
+        'https://multitwitch.live/pablytos/teczerr/zelnite93/saoobii/zaiiro',
       src: TwitchIcon,
     },
   ];
