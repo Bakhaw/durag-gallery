@@ -1,0 +1,40 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  height: calc(100vh - 30px);
+
+  &__AppLogo {
+    width: 450px;
+
+    @include xs {
+      width: 290px;
+    }
+
+    @include sm {
+      width: 350px;
+    }
+  }
+
+  &__Socials {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    &__Icon {
+      width: 45px;
+      margin: 0 5px;
+      transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+      &:hover {
+        transform: scale(1.08);
+      }
+
+      @include xs {
+        width: 40px;
+      }
+    }
+  }
+}

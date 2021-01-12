@@ -1,0 +1,10 @@
+.Footer {
+  p {
+    color: #fff;
+    font-size: 14px;
+
+    @include xlg {
+      font-size: 18px;
+    }
+  }
+}
